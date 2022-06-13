@@ -15,14 +15,13 @@
             <div class="col g-2">
                 <div class="card h-100 " style="width: 14rem; ">
                     <div class="card-body">
-                      <h5 class="card-title text-center">{{$movie->title}}</h5>
-                      <h6 class="card-subtitle mb-2 text-muted text-center">{{$movie->original_title}}</h6>
-                      <p  class="card-text"> Nationality: {{$movie->nationality}}</p>
-                      <p  class="card-text"> Relase date: {{$movie->date}}</p>
-                      <p  class="card-text">Vote: {{$movie->vote}}</p>
+                    <h5 class="card-title text-center">{{$movie->title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-center">{{$movie->original_title}}</h6>
+                    <p  class="card-text"> Nationality: {{$movie->nationality}}</p>
+                    <p  class="card-text"> Relase date: {{$movie->date}}</p>
+                    <p  class="card-text">Vote: {{$movie->vote}}</p>
                     </div>
-                  </div>
-                
+                </div>
             </div>
             @endforeach
         </div>

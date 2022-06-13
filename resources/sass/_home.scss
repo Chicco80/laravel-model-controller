@@ -1,0 +1,19 @@
+.container{
+    .row{
+        .col{
+            .card{
+               .card-body{
+                h5{
+                    color: red;
+                }
+                h6{
+                    color:blue;
+                }
+                p{
+                    color:green;
+                }
+               }
+            }
+        }
+    }
+}
