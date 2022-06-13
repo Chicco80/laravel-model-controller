@@ -8,7 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-center">iodanvirenoubv qeoa</h1>
-    <i class="fa solid fa-star"></i>
+    <div class="container">
+        {{-- @dump($movies) --}}
+        <ul>
+            @foreach ($movies as $movie)
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{$movie->title}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{$movie->originaltitle}}</h6>
+                  <p class="card-text">{{$movie->nationality}}</p>
+                  <a href="#" class="card-link">{{$movie->date}}</a>
+                  <a href="#" class="card-link">{{$movie->vote}}</a>
+                </div>
+              </div>
+        @endforeach
+        </ul>
+        
+    </div>
 </body>
 </html>
